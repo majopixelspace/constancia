@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Constancia — Paquete de exploración</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0C0E12;--ink2:#14171E;--line:rgba(237,239,243,.14);
+  --tx:#EDEFF3;--soft:rgba(237,239,243,.66);--mid:rgba(237,239,243,.42);
+  --blue:#2440EE;--blue-hi:#93A5FF;
+  --display:"Space Grotesk","Inter",sans-serif;--sans:"Inter",sans-serif;--mono:"IBM Plex Mono",monospace;
+  --pad:clamp(24px,5vw,80px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--ink);color:var(--tx);font-family:var(--sans);-webkit-font-smoothing:antialiased;min-height:100svh;display:flex;flex-direction:column}
+main{flex:1;max-width:960px;width:100%;margin:0 auto;padding:calc(var(--pad) + 16px) var(--pad) var(--pad)}
+.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--blue-hi);margin-bottom:20px}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(48px,8vw,96px);line-height:.96;letter-spacing:-.02em}
+.lede{font-family:var(--display);font-size:clamp(17px,1.9vw,23px);line-height:1.45;color:var(--soft);max-width:46ch;margin-top:20px}
+
+.list{margin-top:clamp(34px,5vw,56px);border-top:1px solid var(--line)}
+.row{display:grid;grid-template-columns:64px 1fr auto;gap:clamp(14px,2.5vw,28px);align-items:center;padding:clamp(18px,2.6vw,26px) 0;border-bottom:1px solid var(--line)}
+@media(max-width:640px){.row{grid-template-columns:44px 1fr;row-gap:12px}.row .go{grid-column:2}}
+.row .n{font-family:var(--mono);font-size:12px;letter-spacing:.1em;color:var(--blue-hi)}
+.row h2{font-family:var(--display);font-weight:600;font-size:clamp(20px,2.4vw,28px);letter-spacing:-.01em}
+.row p{font-size:14px;line-height:1.55;color:var(--soft);margin-top:5px;max-width:52ch}
+.row .meta{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--mid);margin-top:9px}
+.go{display:flex;gap:8px}
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--sans);font-weight:600;font-size:13.5px;padding:11px 18px;border-radius:9px;background:var(--blue);color:#fff;text-decoration:none;white-space:nowrap}
+.btn:hover{background:#1B33C9}
+.btn.gh{background:transparent;color:var(--blue-hi);border:1.5px solid rgba(147,165,255,.5)}
+.btn.gh:hover{border-color:var(--blue-hi)}
+.btn span{font-size:15px}
+a:focus-visible{outline:2px solid var(--blue-hi);outline-offset:3px}
+
+footer{padding:26px var(--pad) 34px;max-width:960px;width:100%;margin:0 auto;font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;line-height:1.8;color:var(--mid);border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+<main>
+  <div class="eyebrow">Pixelspace · Exploración de concepto · Julio 2026</div>
+  <h1>Constancia</h1>
+  <p class="lede">El paquete completo de la exploración, en un solo lugar. Cuatro piezas, en el orden en que conviene recorrerlas.</p>
+
+  <div class="list">
+
+    <div class="row">
+      <span class="n">01</span>
+      <div>
+        <h2>El concepto</h2>
+        <p>De dónde nace la idea, contra qué compite, la tesis de la bitácora, las cuatro temperaturas del dinero y los riesgos de diseño.</p>
+        <div class="meta">HTML · 25 slides · navega con flechas</div>
+      </div>
+      <div class="go"><a class="btn" href="constancia.html" target="_blank" rel="noopener">Abrir <span>→</span></a></div>
+    </div>
+
+    <div class="row">
+      <span class="n">02</span>
+      <div>
+        <h2>Las cinco historias</h2>
+        <p>Personas y wireframes de los momentos clave: un imprevisto, la casa, los estudios, el negocio y la vida.</p>
+        <div class="meta">HTML · 38 slides · wireframes en gris</div>
+      </div>
+      <div class="go"><a class="btn" href="momentos-historia-01.html" target="_blank" rel="noopener">Abrir <span>→</span></a></div>
+    </div>
+
+    <div class="row">
+      <span class="n">03</span>
+      <div>
+        <h2>Las pantallas</h2>
+        <p>La dirección visual aplicada: doce pantallas en dos secciones — lo que ve quien envía y lo que ve quien recibe.</p>
+        <div class="meta">HTML · 12 pantallas · desliza horizontal</div>
+      </div>
+      <div class="go"><a class="btn" href="pantallas.html" target="_blank" rel="noopener">Abrir <span>→</span></a></div>
+    </div>
+
+    <div class="row">
+      <span class="n">04</span>
+      <div>
+        <h2>La narrativa</h2>
+        <p>El documento para dejarle al cliente: la historia completa del concepto en diez páginas, lista para leerse de corrido y comentarse.</p>
+        <div class="meta">Word para comentar · PDF para leer</div>
+      </div>
+      <div class="go">
+        <a class="btn" href="constancia-narrativa.docx">Word <span>↓</span></a>
+        <a class="btn gh" href="constancia-narrativa.pdf" target="_blank" rel="noopener">PDF</a>
+      </div>
+    </div>
+
+  </div>
+</main>
+<footer>Mantén los seis archivos en esta misma carpeta para que los enlaces funcionen · Cada pieza abre en su propia pestaña; este índice queda siempre abierto · Textos, montos y nombres de las historias son ficticios</footer>
+</body>
+</html>

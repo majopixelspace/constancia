@@ -1,0 +1,8 @@
+# Render Blueprint — sitio estático
+# https://render.com/docs/blueprint-spec
+services:
+  - type: web
+    name: constancia
+    runtime: static
+    buildCommand: "true"      # sin build: son archivos HTML estáticos
+    staticPublishPath: .      # se publica la raíz del repositorio
